@@ -1,0 +1,13 @@
+PowerSet
+--------
+
+GetPowerSet(int[] set)
+
+Given a list of numbers as a set, the method will create all of the valid subsets of this list.
+The number of sub sets will be 2^S where S is the length of set.
+
+The method loops from 0 to (2^S)-1 in order to get each permutation.
+To work out which members of set belong in each permutation a method determines which bits are set in the counter.
+
+For example:
+When trying to find the 8th permutation, the counter = 7 or 111 (binary). The bits at indexes 0, 1 and 2 are set so those members of the set are extracted as a subset -> set[0], set[1], set[2].
